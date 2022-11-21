@@ -1,0 +1,78 @@
+function test(){
+    //var d;
+    console.log("D is ",d);
+    if(10>2)
+    {
+        var d=10;
+    }
+    console.log("D is ",d);
+}  
+undefined
+function test(){
+    //var d;
+    console.log('D is ',d);
+    if(10>2)
+    {
+        var d=10;
+    }
+    console.log('D is ',d);
+}  
+undefined
+function test(){
+    //var d;
+    console.log('D is ',d);
+    if(10>2)
+    {
+        var d=10;
+    }
+    console.log('D is ',d);
+}  
+undefined
+return 1;
+VM418:1 Uncaught SyntaxError: Illegal return statement
+function test(){
+    //var d;
+    console.log('D is ',d);
+    if(10>2)
+    {
+        var d=10;
+    }
+    console.log('D is ',d);
+    return 1;
+}  
+undefined
+test();
+VM446:3 D is  undefined
+VM446:8 D is  10
+1
+function test(){
+    //var d;
+    console.log('D is ',d);
+    if(10<2)
+    {
+        var d=10;
+    }
+    console.log('D is ',d);
+    return 1;
+}  
+undefined
+test();
+VM480:3 D is  undefined
+VM480:8 D is  undefined
+1
+var q= function(){
+}
+undefined
+typeof q;
+'function'
+q;
+ƒ (){
+}
+q();
+undefined
+k();
+var k = function(){
+}
+VM684:1 Uncaught TypeError: k is not a function
+    at <anonymous>:1:1
+(anonymous) @ VM684:1

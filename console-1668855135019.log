@@ -1,0 +1,46 @@
+var a=10
+undefined
+var b=20;
+undefined
+var c=a;
+undefined
+typeof(c);
+'number'
+c++;
+10
+c;
+11
+++c;
+12
+c=c+1;
+13
+var arr=[10,20];
+undefined
+typeof(arr);
+'object'
+arr.push(100);
+3
+arr;
+(3) [10, 20, 100]0: 101: 202: 100length: 3[[Prototype]]: Array(0)
+var x="keshav";
+undefined
+typeof x;
+'string'
+var y=new String();
+undefined
+y=new String("keshav");
+String {'keshav'}
+typeof y;
+'object'
+typeof x.;
+VM564:1 Uncaught SyntaxError: Unexpected token ';'
+x.toUpperCase;
+ƒ toUpperCase() { [native code] }
+x;
+'keshav'
+typeof x;
+'string'
+typeof x.toLowerCase;
+'function'
+var a="3";
+undefined

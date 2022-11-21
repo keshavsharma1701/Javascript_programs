@@ -1,0 +1,76 @@
+var a,$a, _a;
+undefined
+typeof a;
+'undefined'
+a=131
+131
+typeof a;
+'number'
+$a=097708371483748738478934756765926598236523857832065983270573295603275962308579326587326589327596239857329875092378957
+9.770837148374874e+115
+typeof $a
+'number'
+_a= 0897882636120361280.89798689689789676897676
+897882636120361300
+typeof _a;
+'number'
+a='fdsgsg';
+'fdsgsg'
+typeof a;
+'string'
+a='a';
+'a'
+typeof a;
+'string'
+a=`ijbvobofbwe
+iuerbgerberb
+oibrgoerbgo`
+'ijbvobofbwe\niuerbgerberb\noibrgoerbgo'
+a="djhcvudvcuedvcwveuve
+VM572:1 Uncaught SyntaxError: Invalid or unexpected token
+"wicbewivciu"+"iuvweciewv"
+'wicbewivciuiuvweciewv'
+"first is "+a+"second is"+ $a;
+'first is ijbvobofbwe\niuerbgerberb\noibrgoerbgosecond is9.770837148374874e+115'
+`first is ${a} second is ${b}`
+VM835:1 Uncaught ReferenceError: b is not defined
+    at <anonymous>:1:28
+(anonymous) @ VM835:1
+var t=true;
+undefined
+typeof t
+'boolean'
+var c=[87,32,252,525,45,2523,532]
+undefined
+typeof c;
+'object'
+_a=BigInt("654654684564684684654684765468746546816546854");
+654654684564684684654684765468746546816546854n
+typeof Array
+'function'
+Var c=9869
+VM1380:1 Uncaught SyntaxError: Unexpected identifier 'c'
+Var h=89789;
+VM1408:1 Uncaught SyntaxError: Unexpected identifier 'h'
+var h=98769;
+undefined
+typeof Array
+'function'
+c;
+(7) [87, 32, 252, 525, 45, 2523, 532]
+c.length;
+7
+c=null;
+null
+typeof c
+'object'
+c=097;
+97
+typeof c;
+'number'
+var ob={};
+undefined
+typeof ob;
+'object'
+var temp=['delhi':24,'pune':22];
+VM1744:1 Uncaught SyntaxError: Unexpected token ':'

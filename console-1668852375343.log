@@ -1,0 +1,10 @@
+function add(){
+    var sum=0;
+    for(var i=0;i<arguments.langth;i++){
+        if(typeof arguments[i]==='function'){
+            arguments[i]=arguments[i]();
+        }
+        sum=sum+(isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));
+    }
+}
+undefined

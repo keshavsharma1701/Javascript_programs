@@ -1,0 +1,68 @@
+function add(){
+    var sum=0;
+    for(var i=0;i<arguments.langth;i++){
+        if(typeof arguments[i]==='function'){
+            arguments[i]=arguments[i]();
+        }
+        sum=sum+(isNaN(parseInt(arguments[i]))?0:parseInt(arguments[i]));
+    }
+    return sum;
+}
+undefined
+function show(){
+    return 2;
+}
+undefined
+add(1,2,4,5.6,[4,5,1],show);
+0
+add(1,2,3);
+0
+add();
+0
+function add(){
+    var sum=0;
+    for(var i=0;i<arguments.langth;i++){
+        sum=sum+(parseInt(arguments[i]);
+    }
+    return sum;
+}
+VM1871:4 Uncaught SyntaxError: Unexpected token ';'
+function add(){
+    var sum=0;
+    for(var i=0;i<arguments.langth;i++){
+        sum=sum+parseInt(arguments[i]);
+    }
+    return sum;
+}
+undefined
+add(2,3,4);
+0
+function add(){ 
+    var sum=0;
+    for(var i=0;i<arguments.length;i++){
+        sum = sum + arguments[i];
+    }
+    return sum;
+}
+undefined
+add(2,3,4,4);
+13
+function add2(...args){
+    console.log(args[1]);
+}
+undefined
+add2(3);
+VM2181:2 undefined
+undefined
+function add2(...args){
+    console.log(args[1]);
+}
+undefined
+var obj1={'a'=10, 'b'=20};
+VM2287:1 Uncaught SyntaxError: Unexpected string
+obj = {a=1,b=2};
+VM2326:1 Uncaught SyntaxError: Invalid shorthand property initializer
+var obj = {a:1, b:2};
+undefined
+obj.a;
+1
