@@ -1,0 +1,26 @@
+function add(...args){
+    console.log('REST ', args instanceof Array);
+    console.log('ARGUMENTS ',arguments instanceof Array);
+    var sum = 0;
+    for(var i = 0 ; i<args.length ; i++){
+        if(args[i] instanceof Array){
+            for(var j = 0; j<args[i].length; j++){
+                if(typeof args[i][j]==='function'){
+            args[i][j] = args[i][j]();
+        }
+                sum = sum + (isNaN(parseInt(args[i][j]))?0:parseInt(args[i][j]));
+            }
+            continue; // Skip the Iteration
+        }
+        if(typeof args[i]==='function'){
+            args[i] = args[i]();
+        }
+        sum = sum + (isNaN(parseInt(args[i]))?0:parseInt(args[i]));
+    }
+    return sum;
+}
+undefined
+add([1,"2", show],["3",4,disp], show, disp, 1,"2", "three");
+VM3083:2 REST  true
+VM3083:3 ARGUMENTS  false
+21

@@ -1,0 +1,20 @@
+var t = (function (){
+var count = 1;
+function counter(){
+    
+    count++;
+    return count;
+}
+    return counter;
+})();
+undefined
+t();
+2
+t();
+3
+t();
+4
+t();
+5
+t();
+6
